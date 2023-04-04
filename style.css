@@ -1,134 +1,220 @@
-/* CSS reset and other styles remain the same */
 * { 
-    margin: 0; 
+  margin: 0; 
+  padding: 0;
 }
 
 .container {
-    display: grid;
-    grid-template-areas:
-      "links header header header"
-      "links main main ann"
-      "links main main ann"
-      "links main main trend"
-      "links main main trend";
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: auto repeat(4, 1fr);
-  
-    min-height: 100vh;
-  }
-  
-  .links {
-    grid-area: links;
-    display: grid;
-    gap: 50px;
-    background-color: #FF7755;
-    padding: 20px;
-  }
-  
-  .headerBar {
-    grid-area: header;
-    display: grid;
-    grid-template-areas:
-      "search search alert"
-      "greet greet create";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #393f4d;
-    color: white;
-    padding: 20px;
-  }
-  
-  .search-container {
-    grid-area: search;
-  }
-  
-  .alert {
-    grid-area: alert;
-  }
-  
-  .greet {
-    grid-area: greet;
-  }
-  
-  .create {
-    grid-area: create;
-  }
-  
-  .main {
-    grid-area: main;
-    background-color: #bccbde;
-    padding: 20px;
-  } 
-  /* Add the following to your existing CSS */
+  display: grid;
+  grid-template-areas:
+  "list header header header"
+  "list main main ann"
+  "list main main ann"
+  "list main main trend"
+  "list main main trend";
 
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 15px;
-    grid-auto-rows: minmax(200px, auto);
-  }
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: auto repeat(4, 1fr);
+  min-height: 100vh;
+}
+
+.homeLogo { 
+  grid-area: logo;
+  display: grid;
+  background-color: #FF7755;
+  align-self: start;
+  margin-bottom: 20px; 
+  grid-template-columns: auto 1fr;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.sideBar {
+  grid-area: list;
+  gap: 50px;
+  background-color: #FF7755;
+  padding: 10px;
+  grid-template-columns: auto 1fr; /* add this line */
+} 
+
+.logoText { 
+  align-self: center;
+  margin-left: -5px;
+}
+
+.list { 
+  grid-area: list; 
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.list a { 
+  display: flex;
+  padding: 10px 0;
+  text-decoration: none;
+  color: inherit;
   
-  /* Update the .project CSS */
+}
+
+.list a svg { 
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: blue;
+}
+
+.homeLogo svg { 
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  fill: blue;
+}
+
+
+.headerBar {
+  grid-area: header;
+  display: grid;
+  grid-template-areas:
+    "search search search alert"
+    "greet greet create create";
+  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  background-color: #393f4d;
+  color: white;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.search-container {
+  grid-area: search;
+  border: solid; 
+  border-color: red;
+  display: flex;
+  align-items: center;
+} 
+
+.search-container svg { 
+  width: 30px;
+  height: 30px;
+}
+
+.search-container input[type="text"] {
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  margin-left: 10px;
+  font-size: 15px;
+  outline: none;
+  width: 20rem;
+}
+
+.alert {
+  grid-area: alert;
+  border: solid;
+}
+
+.greet {
+  grid-area: greet;
+  border: solid;
+}
+
+.greet svg { 
+  width: 10px;
+  height: 10px;
+}
+
+.create {
+  grid-area: create;
+  border: solid;
+}
+
+.main {
+  grid-area: main;
+  background-color: #bccbde;
+  padding: 20px;
+} 
+
+/* Add the following to your existing CSS */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 15px;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+/* Update the .project CSS */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid red;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.card {
+  background-color: #FFFFFF;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.iconReel { 
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-right: 10px;
+}
+.iconReel svg { 
+  width: 20px;
+  height: 20px;
   
-  .project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    color: black;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    height: 100%;
-  }
-  
-  .card {
-    background-color: #FFFFFF;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    height: 100%;
-  }
-  
-  .card-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .projectDesc {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .icon-list {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .icon {
-    font-size: 24px;
-  }
-  
-  
-  .announce {
-    grid-area: ann;
-    background-color: #FF7755;
-    padding: 20px;
-  }
-  
-  .trending {
-    grid-area: trend;
-    background-color: #55e0ff;
-    padding: 20px;
-  }
-  
+}
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.projectDesc {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.announce {
+  grid-area: ann;
+  background-color: #FF7755
+}
+
+.trending { 
+  grid-area: trend;
+  background-color: #FF7755
+}
