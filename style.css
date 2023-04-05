@@ -12,10 +12,11 @@
   "list main main trend"
   "list main main trend";
 
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 1.5fr;
   grid-template-rows: auto repeat(4, 1fr);
   min-height: 100vh;
 }
+
 
 .homeLogo { 
   grid-area: logo;
@@ -81,20 +82,21 @@
   grid-template-areas:
     "search search search alert"
     "greet greet create create";
-  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-columns: auto 3fr 1fr auto;
   grid-template-rows: 1fr 1fr;
   background-color: #393f4d;
-  color: white;
+  color: black;
   padding: 20px;
   border: 1px solid red;
+  background-color: #FFFFFF;
+
 }
 
 .search-container {
   grid-area: search;
-  border: solid; 
-  border-color: red;
   display: flex;
-  align-items: center;
+  align-items: center; 
+  padding: 10px;
 } 
 
 .search-container svg { 
@@ -110,31 +112,75 @@
   font-size: 15px;
   outline: none;
   width: 20rem;
+  background-color: lightgray;
 }
 
 .alert {
+  display: flex;
   grid-area: alert;
-  border: solid;
+  align-items: center;
+  gap: 10px; 
+  padding: 10px;
+} 
+
+.alert #name { 
+  margin-left: -8px;
+
 }
 
-.greet {
+.alert svg { 
+  width: 30px;
+  height: 30px;
+}
+
+.greet { 
+  display: flex;
   grid-area: greet;
-  border: solid;
+  padding: 2%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .greet svg { 
-  width: 10px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
 }
 
+.innerGreet { 
+  display: flex;
+  flex-direction: column;
+} 
+
+#topGreet { 
+  font-size: 15px;
+}
+
+#bottomGreet { 
+  font-size: 22px;
+}
 .create {
   grid-area: create;
-  border: solid;
+  align-self: center;
+  
+  
+}
+
+.create button { 
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  border-color: #393f4d;
+  border-width: 1px;
+  background-color:blue;
+  margin-right: 20px; 
+  color: white;
 }
 
 .main {
   grid-area: main;
   background-color: #bccbde;
+  border: solid;
   padding: 20px;
 } 
 
@@ -211,10 +257,14 @@
 
 .announce {
   grid-area: ann;
-  background-color: #FF7755
+  background-color: #bccbde;
+  padding: 20px;
 }
 
-.trending { 
-  grid-area: trend;
-  background-color: #FF7755
+.innerAnn { 
+  border: solid;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 10px;
+
 }
