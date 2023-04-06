@@ -182,7 +182,7 @@ body {
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 2%;
+  padding: 2%; 
   
 }
 
@@ -195,13 +195,24 @@ body {
   border-width: 1px;
   background-color: rgb(139, 158, 243);
   margin-right: 20px; 
-  color: white;
+  color: white; 
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+button:active {
+  transform: translateY(2px);
 }
 
 .main {
   grid-area: main;
   background-color: #bccbde;
-  padding: 20px; 
+  padding: 20px;  
+  overflow: auto; 
+  max-height: 100%;
 } 
 
 /* Add the following to your existing CSS */
@@ -211,6 +222,9 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 20px;
   grid-auto-rows: auto; 
+  overflow: auto;
+  margin-top: 10px
+
   
 }
 
@@ -229,6 +243,9 @@ body {
   border-radius: 10px;
   border-left: 10px solid orange; 
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: auto; 
+  max-height: 100%;
+
 }
 
 .card {
@@ -287,6 +304,7 @@ body {
   margin-bottom: 10px; 
   width: 80%; 
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
 }
  
 .announceTitle { 
@@ -314,11 +332,15 @@ body {
   border-radius: 10px;
   width: 90%;
   padding: 10px; 
-  
+  margin-top: 7px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  
 
 }
 
+a svg:hover { 
+  fill: red;
+}
 .trendingIconList { 
   list-style: none;
 }
@@ -332,14 +354,40 @@ body {
 
 .tagBox {
   list-style: none; 
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .tagName { 
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-left: 2px;
+  font-size: small;
 }
 
 .icon { 
   width: 30px ;
   height: 30px; 
 }
+
+#scrollbar2::-webkit-scrollbar {
+  width: 12px;
+}
+
+#scrollbar2::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #bccbde;
+  border: 1px solid blue;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+#scrollbar2::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #7ea3d4
+}
+
+/* div labels (span) */ 
+
+.boxLabel { 
+  font-size: 20px;
+  font-weight: bold;
+}
+
