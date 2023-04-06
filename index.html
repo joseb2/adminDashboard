@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,100 +7,142 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class = "container">
-        <div class = "links">
-            <div class = "homeLogo">
-
-            </div> 
-            <div class = "list">
-                <a href="https://www.example.com" >Home</a>
-                <a href="https://www.example.com" >Profile</a>
-                <a href="https://www.example.com" >Messages</a>
-                <a href="https://www.example.com" >History</a>
-                <a href="https://www.example.com" >Tasks</a>
-                <a href="https://www.example.com" >Communities</a>
-                \n
-                <a href="https://www.example.com" >Settings</a>
-                <a href="https://www.example.com" >Support</a>
-                <a href="https://www.example.com" >Privacy</a>
-
-            </div>
-        </div> 
-        <div class = "headerBar">
-            <form>
-                <div class="search-container">
-                  <input type="text" placeholder="Search...">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </div>
-            </form>
-            <div class = "social">
-                <section id = "icon"></section>
-                <section id = "greet"></section>
-                <section id = "socials"></section>
-            </div>
-            <div class = "alert"> 
-                <section id = "bell"></section> <!-- replace with bell icon-->
-                <section id = "smallIcon"></section> <!-- replace with logo icon-->
-                <section id = "name"></section>
-
-            </div>
-            <div class = "create">
-                <button class = "selectorButton" title = "new" type = "submit">New</button>
-                <button class = "selectorButton" title = "upload" type = "submit">Upload</button>
-                <button class = "selectorButton" title = "share" type = "submit">Share</button>
-            </div>
-        </div>
-        <div class = "main"> 
-            <div class="projects-container">
-                <div class="project">
-                  <div class="card">
-                    <h3 class="card-title">Title of Project 1</h3>
-                    <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci hendrerit purus aliquet vulputate eu a ex.
-                      Pellentesque in risus id ipsum egestas dapibus. Maecenas ut laoreet ligula. Quisque.
-                    </p>
-                  </div>
-                  <div class="iconReel"></div>
+        <div class = "container">
+            <div class = "sideBar">
+              <div class = "logoContainer">
+                <div class = "homeLogo">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>alarm-panel</title><path d="M20 3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3M8 19H5V17H8V19M8 16H5V14H8V16M8 13H5V11H8V13M13.5 19H10.5V17H13.5V19M13.5 16H10.5V14H13.5V16M13.5 13H10.5V11H13.5V13M19 19H16V17H19V19M19 16H16V14H19V16M19 13H16V11H19V13M19 9H5V5H19V9Z" /></svg>
+                  <span class ="logoText">Dashboard</span>
                 </div> 
-                <div class="project">
-                    <div class="card">
-                      <h3 class="card-title">Title of Project 1</h3>
-                      <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci hendrerit purus aliquet vulputate eu a ex.
-                        Pellentesque in risus id ipsum egestas dapibus. Maecenas ut laoreet ligula. Quisque.
-                      </p>
-                    </div>
-                    <div class="iconReel"></div>
+              </div>
+                <div class = "list">
+                  <a href="#" class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    Wrench
+                  </a>
+                  <a href="#" class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    Hammer
+                  </a>
+                  <a href="#" class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    Needle
+                  </a>
+                  <a href="#" class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    Phone
+                  </a>
+                  <a href="#" class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    Screwdriver
+                  </a>
+                  <a href="#" class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    Item 1
+                  </a>
+                </div>
+            </div> 
+            <div class = "headerBar">
+                <div class="search-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class = "greet">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                  <div class = "innerGreet">
+                    <span id = "topGreet">Hey</span>
+                    <span id = "bottomGreet">MaryBeeBop</span>
                   </div>
-                  <div class="project">
-                    <div class="card">
-                      <h3 class="card-title">Title of Project 1</h3>
-                      <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci hendrerit purus aliquet vulputate eu a ex.
-                        Pellentesque in risus id ipsum egestas dapibus. Maecenas ut laoreet ligula. Quisque.
-                      </p>
-                    </div>
-                    <div class="iconReel"></div>
-                  </div> 
-                  <div class="project">
-                    <div class="card">
-                      <h3 class="card-title">Title of Project 1</h3>
-                      <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci hendrerit purus aliquet vulputate eu a ex.
-                        Pellentesque in risus id ipsum egestas dapibus. Maecenas ut laoreet ligula. Quisque.
-                      </p>
-                    </div>
-                    <div class="iconReel"></div>
-                  </div>
-                  
-                <!-- Add other .project divs here -->
+                </div>
+                <div class = "alert"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                  <section id = "name">WORDS</section>
+                </div>
+                <div class = "create">
+                    <button class = "selectorButton" title = "new" type = "submit">New</button>
+                    <button class = "selectorButton" title = "upload" type = "submit">Upload</button>
+                    <button class = "selectorButton" title = "share" type = "submit">Share</button>
+                </div>
             </div>
-               
-            
-        </div>
-        <div class = "announce">
-            <div class = "announceTitle"></div>
-            <p class = "announceDesc"></p>
-        </div>
-        <div class = "trending"></div>
-    </div>
-    
-</body>
-</html>
+            <div class = "main"> 
+                <div class="projects-container">
+                    <div class="project">
+                      <div class="card">
+                        <h3 class="card-title">Title of Project 1</h3>
+                        <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci hendrerit purus aliquet vulputate eu a ex.
+                          Pellentesque in risus id ipsum egestas dapibus. Maecenas ut laoreet ligula. Quisque.
+                        </p>
+                      </div>
+                      <div class="iconReel">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                      </div>
+                    </div> 
+                    <div class="project">
+                      <div class="card">
+                        <h3 class="card-title">Title of Project 1</h3>
+                        <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci hendrerit purus aliquet vulputate eu a ex.
+                          Pellentesque in risus id ipsum egestas dapibus. Maecenas ut laoreet ligula. Quisque.
+                        </p>
+                      </div>
+                      <div class="iconReel">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                      </div>
+                    </div> 
+                    <div class="project">
+                      <div class="card">
+                        <h3 class="card-title">Title of Project 1</h3>
+                        <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci hendrerit purus aliquet vulputate eu a ex.
+                          Pellentesque in risus id ipsum egestas dapibus. Maecenas ut laoreet ligula. Quisque.
+                        </p>
+                      </div>
+                      <div class="iconReel">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                      </div>
+                    </div> 
+                    <div class="project">
+                      <div class="card">
+                        <h1 class="card-title">Title of Project 1</h1>
+                        <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci hendrerit purus aliquet vulputate eu a ex.
+                          Pellentesque in risus id ipsum egestas dapibus. Maecenas ut laoreet ligula. Quisque.
+                        </p>
+                      </div>
+                      <div class="iconReel">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                      </div>
+                    </div> 
+                    <!-- Add other .project divs here -->
+                </div>
+            </div>
+            <div class = "announce">
+              <div class = "innerAnn">
+                <div class = "annBox">
+                  <div class = "announceTitle">Title</div>
+                  <p class = "announceDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel orci </p>
+                </div>
+              </div>
+            </div>
+            <div class = "trending"> 
+              <div class = "innerTrend"><!--trending section // sans serif?-->
+                <div class ="tagContent">
+                <ul>
+                  <li class = "trendingIcons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg></li>
+               </ul> 
+                <ul>
+                  <ul class = "tagBox">
+                   <li class = "tagAt">@ralph</li>
+                   <li class = "tagName">World Peace Builder</li>
+                  </ul>
+                </ul>
+                </div>
+              </div>
+            </div>
+      </div>
