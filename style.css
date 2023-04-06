@@ -45,7 +45,6 @@
 
 .list { 
   grid-area: list; 
-  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 10px;
